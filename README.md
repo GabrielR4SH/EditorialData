@@ -50,12 +50,13 @@ O foco é precisão, organização didática e apoio à tomada de decisão — e
 ## Funcionalidades previstas (MVP)
 
 - [x] Ambiente Docker completo
-- [ ] Autenticação (Login / Registro)
-- [ ] CRUD de Setores Econômicos
-- [ ] CRUD de Pesquisas / Inventários
-- [ ] CRUD de Publicações / Edições
-- [ ] Dashboard com indicadores
+- [x] Autenticação (Login / Registro)
+- [x] CRUD de Setores Econômicos
+- [x] CRUD de Pesquisas / Inventários
+- [x] CRUD de Publicações / Edições
+- [x] Dashboard com indicadores
 - [ ] Controle básico de permissões (Admin / Editor)
+- [ ] Padronização de Edição (Layouts/Templates)
 
 ---
 
