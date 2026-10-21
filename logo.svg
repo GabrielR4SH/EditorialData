@@ -1,0 +1,102 @@
+<svg width="360" height="90" viewBox="0 0 360 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="360" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0F1E"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <!-- Accent gradient (blue → indigo) -->
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <!-- Horizontal accent gradient for text -->
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+
+    <!-- Border gradient -->
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="360" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+
+    <!-- Glow effect for accent elements -->
+    <filter id="glowBlue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft shadow for icon -->
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#38BDF8" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="90" rx="14" fill="url(#bgGrad)"/>
+
+  <!-- Subtle border with gradient glow -->
+  <rect width="360" height="90" rx="14" stroke="url(#borderGrad)" stroke-width="1" fill="none"/>
+
+  <!-- ── Icon: stylized bar chart + data node ── -->
+
+  <!-- Bar 1 — short -->
+  <rect x="22" y="54" width="9" height="20" rx="3" fill="url(#accentGrad)" opacity="0.45"/>
+  <!-- Bar 2 — medium -->
+  <rect x="35" y="40" width="9" height="34" rx="3" fill="url(#accentGrad)" opacity="0.7"/>
+  <!-- Bar 3 — tall -->
+  <rect x="48" y="24" width="9" height="50" rx="3" fill="url(#accentGrad)" filter="url(#softShadow)"/>
+
+  <!-- Trend line connecting tops -->
+  <polyline points="26.5,54 39.5,40 52.5,24" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 2" opacity="0.6"/>
+
+  <!-- Glowing dot on tallest bar top -->
+  <circle cx="52.5" cy="20" r="5" fill="#38BDF8" filter="url(#glowBlue)"/>
+  <circle cx="52.5" cy="20" r="3" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Small node dots on other bars -->
+  <circle cx="26.5" cy="50" r="3" fill="#6366F1" opacity="0.8"/>
+  <circle cx="39.5" cy="36" r="3" fill="#818CF8" opacity="0.8"/>
+
+  <!-- ── Vertical divider ── -->
+  <line x1="80" y1="18" x2="80" y2="72" stroke="#1E3A5F" stroke-width="1.2"/>
+
+  <!-- ── Logotype text ── -->
+
+  <!-- "EDITORIAL" — light, spaced, muted -->
+  <text
+    x="98" y="38"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13"
+    font-weight="300"
+    letter-spacing="5"
+    fill="#94A3B8"
+  >EDITORIAL</text>
+
+  <!-- "Data" — bold, gradient-like via two overlapping texts -->
+  <!-- Base white -->
+  <text
+    x="98" y="63"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="26"
+    font-weight="700"
+    letter-spacing="1"
+    fill="#E2E8F0"
+  >Data</text>
+
+  <!-- Accent underline bar beneath "Data" -->
+  <rect x="98" y="68" width="60" height="2.5" rx="1.5" fill="url(#textGrad)" opacity="0.9"/>
+
+  <!-- Small decorative accent dot after "Data" -->
+  <circle cx="270" cy="44" r="2" fill="#38BDF8" opacity="0.3"/>
+  <circle cx="280" cy="50" r="1.5" fill="#6366F1" opacity="0.25"/>
+  <circle cx="286" cy="38" r="1" fill="#38BDF8" opacity="0.2"/>
+</svg>
