@@ -1,0 +1,16 @@
+Docker completo (PHP + Nginx + PostgreSQL)
+Laravel 13 configurado
+Autenticação com Sanctum (register, login, logout, me)
+Models + Migrations + Relacionamentos
+Form Requests com validação
+Controllers da API (CRUD completo)
+Seeder com dados realistas de setores, pesquisas e publicações
+Rotas protegidas funcionando
+
+Isso já é suficiente para você falar com segurança sobre:
+
+Como estruturou um projeto do zero com Docker
+Diferença de trabalhar com PostgreSQL
+Organização do código (Form Request, API Resource pattern, Controllers limpos)
+Multitenancy ainda não tem, mas a base está pronta para evoluir
+Experiência real com a stack que a vaga pede
